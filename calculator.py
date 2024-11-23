@@ -1,26 +1,29 @@
+# Complete implementation of all required functions
+
+# Step 1: Add, Subtract, Multiply
 def add(x, y):
     return x + y
 
-
 def subtract(x, y):
-    pass
-
-
-def divide(x, y):
-    pass
-
+    return x - y
 
 def multiply(x, y):
-    pass
+    return x * y
 
+# Step 2: Divide
+def divide(x, y):
+    if y == 0:
+        return "Invalid value for denominator, can't divide by 0!"
+    return x / y
 
+# Step 3: Square, Power, Square Root
 def square(x):
-    pass
-
+    return x * x
 
 def power(x, y):
-    pass
-
+    return x ** y
 
 def sqrt(x):
-    pass
+    if x < 0:
+        return "Cannot calculate the square root of a negative number!"
+    return x ** 0.5
